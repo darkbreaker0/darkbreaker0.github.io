@@ -45,7 +45,7 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 </div>
 
 <div class="banner-frame" markdown="0">
-<video autoplay loop muted playsinline preload="metadata">
+<video controls loop muted playsinline preload="none" poster="{{ site.url }}{{ site.baseurl }}/images/poster-mechanism.jpg">
   <source src="{{ site.url }}{{ site.baseurl }}/images/arp3-mechanism.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
@@ -53,7 +53,7 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 </div>
 
 <div class="banner-frame" markdown="0">
-<video autoplay loop muted playsinline preload="metadata">
+<video controls loop muted playsinline preload="none" poster="{{ site.url }}{{ site.baseurl }}/images/poster-tensegrity.jpg">
   <source src="{{ site.url }}{{ site.baseurl }}/images/arp3-tensegrity.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
@@ -64,7 +64,7 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 - **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
 
 <div class="banner-frame" markdown="0">
-<video autoplay loop muted playsinline preload="metadata">
+<video controls loop muted playsinline preload="none" poster="{{ site.url }}{{ site.baseurl }}/images/poster-nucleation.jpg">
   <source src="{{ site.url }}{{ site.baseurl }}/images/mt-nucleation.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
