@@ -9,16 +9,14 @@ permalink: /publications/
 
 <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
 
+<p style="color: var(--text-secondary);">First-author papers are shown in <b>bold</b>. ORCID: <a href="https://orcid.org/0000-0002-6852-2900">0000-0002-6852-2900</a> &middot; <a href="https://scholar.google.com/citations?user=xARPM5QAAAAJ">Google Scholar</a></p>
+
 <div class="section-card" id="pubList">
-<h3>Preprints</h3>
+<h3>Manuscripts in revision</h3>
 
 {% bibliography --query @unpublished %}
 
-<h3>Refereed Journal Articles</h3>
+<h3>Journal articles</h3>
 
 {% bibliography --query @article %}
-
-<h3>Refereed Conference Proceedings</h3>
-
-{% bibliography --query @inproceedings %}
 </div>
