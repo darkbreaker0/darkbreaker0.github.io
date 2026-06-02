@@ -36,6 +36,14 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 <div class="section-card" markdown="1">
 ### What I have shown so far
 
+<div class="banner-frame" markdown="0">
+<video autoplay loop muted playsinline preload="metadata">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/arp23-myosin.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
+<div class="banner-caption">Arp2/3&ndash;actomyosin dynamics underlying the actin wave that establishes neuronal polarity.</div>
+</div>
+
 - **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in revision, 2026.*
 - **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
 - **Collaborative omics of repair and disease.** Linking pre-synaptic-vesicle gene downregulation to axon-regeneration potential, extracellular-matrix upregulation in reactive astrocytes after stroke, and dorsal-root-ganglion subtype responses to nerve injury.
