@@ -3,10 +3,10 @@
 // =============================================================
 
 :root {
-  // Accent — a warm scholarly teal
-  --accent: #1a7a6d;
-  --accent-hover: #15655a;
-  --accent-light: rgba(26, 122, 109, 0.08);
+  // Accent — Direction C violet (also injected from _config.yml accent_color)
+  --accent: #7c5cd6;
+  --accent-hover: #6a49c4;
+  --accent-light: rgba(124, 92, 214, 0.10);
 
   // Light mode — warm parchment tones
   --bg-primary: #f8f6f1;
@@ -51,9 +51,9 @@
 
 // Dark mode — rich warm dark
 [data-bs-theme="dark"] {
-  --accent: #3dbaa8;
-  --accent-hover: #5dd4c2;
-  --accent-light: rgba(61, 186, 168, 0.1);
+  --accent: #a78bfa;
+  --accent-hover: #b9a3fb;
+  --accent-light: rgba(167, 139, 250, 0.16);
 
   --bg-primary: #1c1b18;
   --bg-secondary: #262520;
