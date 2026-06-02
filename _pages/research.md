@@ -18,9 +18,9 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 <div class="section-card" markdown="1">
 ### Programme objectives
 
-1. **Identify molecular targets for intervention.** Using cross-species brain-omics, prioritize cytoskeletal and mechanotransduction genes whose co-expression and co-evolution networks intersect with age-related neurodegeneration and the decline of regenerative potential.
-2. **Characterize age-associated glial changes in morphology and mechanics.** Map how glial cytoskeletal organization — and the mechanical properties it sets — change across developmental and pathological stages, and how those changes alter glial function.
-3. **Decipher the mechanotransduction pathways mediating neuron–glia interactions.** Determine how changes in glial shape and mechanics feed back onto neighbouring neurons' cytoskeletons and morphology during development and degeneration.
+1. **Find the targets.** Cross-species brain-omics to prioritize cytoskeletal and mechanotransduction genes tied to neurodegeneration and the age-related decline of regenerative potential.
+2. **Map glial mechanics with age.** How glial cytoskeletal organization — and the forces it generates — shift across development and disease, and how that reshapes glial function.
+3. **Decode neuron–glia mechanotransduction.** How changing glial shape and mechanics feed back onto neighbouring neurons to remodel their cytoskeleton and form.
 </div>
 
 <div class="section-card" markdown="1">

@@ -22,7 +22,8 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#7c5cd6"      # theme color for links and buttons (Direction C violet)
+accent_color: "#6a49c4"        # links/buttons in light mode (WCAG AA on parchment: 5.8:1)
+accent_color_dark: "#a78bfa"   # links/buttons in dark mode (bright violet, readable on dark)
 dark_mode: true              # show dark mode toggle in navbar
 description: "Tien-Chen Lin — cytoskeletal neurobiology and the mechanobiology of brain development. Postdoctoral researcher (DZNE, Bradke Lab) developing an independent research program on how the cytoskeleton shapes the nervous system."
 baseurl: ""

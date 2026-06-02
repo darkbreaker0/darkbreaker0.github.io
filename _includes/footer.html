@@ -33,3 +33,11 @@
 
 <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
+<script>
+  // Reduced-motion: don't autoplay looping videos; expose controls instead.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(function (v) {
+      v.removeAttribute('autoplay'); v.setAttribute('controls', ''); try { v.pause(); } catch (e) {}
+    });
+  }
+</script>
