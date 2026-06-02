@@ -52,6 +52,14 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 <div class="banner-caption">Zooming in: the subcellular machinery at the soma &mdash; actin patches and protrusions constrained by an actomyosin corset, with localized Arp2/3 and Myosin II activity &mdash; that generates and confines the actin signal driving the oscillator.</div>
 </div>
 
+<div class="banner-frame" markdown="0">
+<video autoplay loop muted playsinline preload="metadata">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/arp3-tensegrity.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
+<div class="banner-caption">Inside the neurite (a tensegrity balance of actin and microtubules): with low Arp2/3 activity, actomyosin arcs contract and the neurite retracts; with high Arp2/3 activity, the arcs disassemble and microtubules stabilize and extend the shaft.</div>
+</div>
+
 - **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in revision, 2026.*
 - **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
 - **Collaborative omics of repair and disease.** Linking pre-synaptic-vesicle gene downregulation to axon-regeneration potential, extracellular-matrix upregulation in reactive astrocytes after stroke, and dorsal-root-ganglion subtype responses to nerve injury.
