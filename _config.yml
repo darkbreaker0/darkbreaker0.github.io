@@ -22,9 +22,9 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#a78bfa"        # Filament violet — links/buttons on the dark base (AA ~7:1)
-accent_color_dark: "#a78bfa"   # site is dark-first; same accent
-dark_mode: false             # dark-first design — no light/dark toggle
+accent_color: "#6a49c4"        # light-mode accent (WCAG AA on light)
+accent_color_dark: "#a78bfa"   # dark-mode accent (bright violet)
+dark_mode: true              # light/dark toggle in the navbar
 description: "Tien-Chen Lin — cytoskeletal neurobiology and the mechanobiology of brain development. Postdoctoral researcher (DZNE, Bradke Lab) developing an independent research program on how the cytoskeleton shapes the nervous system."
 baseurl: ""
 url: "https://darkbreaker0.github.io"

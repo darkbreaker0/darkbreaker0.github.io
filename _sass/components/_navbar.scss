@@ -9,7 +9,7 @@
   z-index: 1030;
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
-  background-color: rgba(10, 11, 15, 0.82) !important;
+  background-color: rgba(247, 248, 250, 0.82) !important;
 
   &.scrolled {
     box-shadow: var(--shadow-navbar);
@@ -17,7 +17,7 @@
 }
 
 [data-bs-theme="dark"] .navbar {
-  background-color: rgba(28, 27, 24, 0.85) !important;
+  background-color: rgba(10, 11, 15, 0.85) !important;
 }
 
 .navbar-brand {

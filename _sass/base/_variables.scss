@@ -3,24 +3,24 @@
 // =============================================================
 
 :root {
-  // Accent — "Filament" violet + cyan (also injected from _config.yml accent_color)
-  --accent: #a78bfa;
-  --accent-hover: #bda6fc;
-  --accent-light: rgba(167, 139, 250, 0.12);
-  --cyan: #5fd0e6;
+  // Accent — "Filament" violet (light mode: AA on light; injected from _config.yml)
+  --accent: #6a49c4;
+  --accent-hover: #5a3bb0;
+  --accent-light: rgba(106, 73, 196, 0.09);
+  --cyan: #14808f;
 
-  // Dark "instrument" palette — the site is dark-first
-  --bg-primary: #0a0b0f;
-  --bg-secondary: #0e1016;
-  --bg-card: #11131b;
-  --text-primary: #ece9e1;
-  --text-secondary: #b9bdc8;
-  --text-muted: #8c92a0;
-  --border-color: rgba(255, 255, 255, 0.09);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.55);
-  --shadow-navbar: 0 1px 0 rgba(255, 255, 255, 0.05);
+  // Light "instrument" palette — cool paper
+  --bg-primary: #f6f7f9;
+  --bg-secondary: #eef0f4;
+  --bg-card: #ffffff;
+  --text-primary: #15171c;
+  --text-secondary: #3f444f;
+  --text-muted: #6b7280;
+  --border-color: rgba(20, 22, 28, 0.12);
+  --shadow-sm: 0 1px 3px rgba(20, 22, 28, 0.06);
+  --shadow-md: 0 6px 18px rgba(20, 22, 28, 0.09);
+  --shadow-lg: 0 14px 40px rgba(20, 22, 28, 0.13);
+  --shadow-navbar: 0 1px 0 rgba(20, 22, 28, 0.08);
 
   // Layout
   --container-max: 1100px;
@@ -50,21 +50,22 @@
   --transition-slow: 400ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-// Dark mode — rich warm dark
+// Dark mode — "Filament" instrument dark
 [data-bs-theme="dark"] {
   --accent: #a78bfa;
-  --accent-hover: #b9a3fb;
-  --accent-light: rgba(167, 139, 250, 0.16);
+  --accent-hover: #bda6fc;
+  --accent-light: rgba(167, 139, 250, 0.14);
+  --cyan: #5fd0e6;
 
-  --bg-primary: #1c1b18;
-  --bg-secondary: #262520;
-  --bg-card: #2a2924;
-  --text-primary: #e8e4dc;
-  --text-secondary: #b5b0a5;
-  --text-muted: #7d796f;
-  --border-color: #3d3a33;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-navbar: 0 1px 4px rgba(0, 0, 0, 0.4);
+  --bg-primary: #0a0b0f;
+  --bg-secondary: #0e1016;
+  --bg-card: #11131b;
+  --text-primary: #ece9e1;
+  --text-secondary: #b9bdc8;
+  --text-muted: #8c92a0;
+  --border-color: rgba(255, 255, 255, 0.09);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.55);
+  --shadow-navbar: 0 1px 0 rgba(255, 255, 255, 0.05);
 }
