@@ -94,6 +94,7 @@ scholar:
     reversed: "reversed"
 
 exclude:
+  - tools
   - Gemfile
   - Gemfile.lock
   - update_bootstrap.sh
