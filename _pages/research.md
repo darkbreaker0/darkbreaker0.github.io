@@ -68,7 +68,7 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
   <source src="{{ site.url }}{{ site.baseurl }}/images/mt-nucleation.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
-<div class="banner-caption">How γ-tubulin nucleates a microtubule: γ-TuSCs oligomerize into a ring template &mdash; completed by MOZART1 &mdash; that templates αβ-tubulin addition and microtubule growth (schematic).</div>
+<div class="banner-caption">How γ-tubulin nucleates a microtubule: the γ-tubulin ring complex (γ-TuRC) caps the minus end and presents a template onto which αβ-tubulin dimers add, growing the lattice toward the plus end (schematic).</div>
 </div>
 
 - **Collaborative omics of repair and disease.** Linking pre-synaptic-vesicle gene downregulation to axon-regeneration potential, extracellular-matrix upregulation in reactive astrocytes after stroke, and dorsal-root-ganglion subtype responses to nerve injury.
