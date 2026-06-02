@@ -1,104 +1,116 @@
-"""Microtubule nucleation animation, Bio-peak style:
-black bg, horizontal MT, 3D-shaded staggered alpha/beta lattice, red gamma-TuRC at (-) end.
-Usage: python nucleation_v2.py sample | full
+"""Pseudo-3D microtubule nucleation (evokes BioRender image-3 style):
+shaded cylindrical MT of alpha/beta beads emerging from a layered gamma-TuRC cone.
+Usage: python nucleation_v3.py sample | full
 """
 import sys, os, math
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, FancyBboxPatch
+from matplotlib.colors import to_rgb
 
-OUT = os.path.join(os.environ["TEMP"], "nuc2_frames")
+OUT = os.path.join(os.environ["TEMP"], "nuc3_frames")
 os.makedirs(OUT, exist_ok=True)
 
-BG      = "#000000"
-C_BETA  = "#1f7a3d"   # beta-tubulin (dark green)
-C_ALPHA = "#b9c7b0"   # alpha-tubulin (pale grey-green)
-C_GCP   = "#6f1420"   # GCP rods (dark red)
-C_GTUB  = "#9e1b27"   # gamma-tubulin caps (red)
-C_TXT   = "#f0f0f0"
-HI      = "white"
+BG     = "#0a0a0a"
+A_COL  = "#dff0cf"   # alpha-tubulin (pale green)
+B_COL  = "#2f9e54"   # beta-tubulin (dark green)
+GTUB   = "#cf2b2b"   # gamma-tubulin (red)
+GCP    = "#e08a2e"   # GCP staves (orange)
+GCPB   = "#9b6fc7"   # GCP base (purple)
+TXT    = "#f0f0f0"
 
-ROWS = 7
-RES_X0 = 1.7          # gamma-TuRC rod left
-CAP_X  = 3.45         # gamma-tubulin cap x
-GREEN0 = 4.05         # first green column x
-DX     = 0.60         # column spacing
-RY     = 0.70         # row spacing
-RAD    = 0.34
-CMAX   = 14
+N   = 13            # protofilaments
+R   = 1.6           # tube radius (screen)
+YC  = 4.7           # tube axis y
+X0  = 5.0           # +x start of green lattice (minus end of tube)
+DX  = 0.60          # axial dimer spacing
+PITCH = 0.135       # helical x-offset per protofilament
+RAD = 0.35
+NR  = 12            # rings at full growth
 
 def ease(u):
-    u = max(0.0, min(1.0, u)); return u*u*(3-2*u)
+    u=max(0,min(1,u)); return u*u*(3-2*u)
 
-_z = [10]
-def sphere(ax, x, y, r, color, z):
-    ax.add_patch(Circle((x, y), r, fc=color, ec="#00000066", lw=0.5, zorder=z))
-    ax.add_patch(Circle((x-0.34*r, y+0.34*r), r*0.42, fc=HI, ec="none", alpha=0.30, zorder=z+0.1))
+def shade(col, f):                       # f in 0..1, 1=front/bright
+    r,g,b = to_rgb(col); k = 0.42+0.58*f
+    return (r*k, g*k, b*k)
 
-def row_y(r):  return 6.3 - r*RY
-def row_sx(r): return r*0.16        # diagonal stagger (helical nesting)
+def bead(ax, x, y, depth, base_col, zbias=0.0):
+    f = (depth+1)/2.0
+    rr = RAD*(0.80+0.20*f)
+    z  = 100 + depth*40 + zbias
+    ax.add_patch(Circle((x,y), rr, fc=shade(base_col,f), ec="#00000055", lw=0.4, zorder=z))
+    if depth > -0.2:                     # highlight on front-facing beads
+        ax.add_patch(Circle((x-0.33*rr, y+0.33*rr), rr*0.40, fc="white",
+                            ec="none", alpha=0.22+0.18*f, zorder=z+0.1))
 
-def draw(t):
-    fig, ax = plt.subplots(figsize=(12.8, 7.2), dpi=100)
+def draw(grow):
+    fig, ax = plt.subplots(figsize=(12.8,7.2), dpi=100)
     fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
-    ax.set_xlim(0, 16); ax.set_ylim(0, 9); ax.axis("off")
+    ax.set_xlim(0,16); ax.set_ylim(0,9); ax.axis("off")
 
-    aturc = ease(t/0.30)
-    grow  = ease((t-0.30)/0.70)
-    ncols = int(round(grow * CMAX))
+    nr = int(round(grow*NR))
+    th = [2*math.pi*i/N for i in range(N)]
 
-    z = 10
-    for r in range(ROWS):                     # top->bottom so lower rows draw in front
-        y = row_y(r); sx = row_sx(r)
-        # gamma-TuRC: GCP rod + gamma-tubulin cap
-        rod = FancyBboxPatch((RES_X0+sx, y-0.22), 1.35, 0.44,
-                             boxstyle="round,pad=0.02,rounding_size=0.22",
-                             fc=C_GCP, ec="#00000066", lw=0.5, alpha=aturc, zorder=z); ax.add_patch(rod)
-        if aturc > 0.05:
-            sphere(ax, CAP_X+sx, y, RAD, C_GTUB, z+1)
-            ax.patches[-2].set_alpha(aturc)   # base of cap sphere
-        # green alpha/beta lattice marching to +end
-        for c in range(ncols):
-            x = GREEN0 + sx + c*DX
-            col = C_BETA if c % 2 == 0 else C_ALPHA
-            sphere(ax, x, y, RAD, col, z+2+c*0.01)
-        z += 5
+    # ---- gamma-TuRC cone (left of tube) ----
+    apex = (X0-3.0, YC)
+    # purple GCP base blobs near apex
+    for k in range(6):
+        a = 2*math.pi*k/6
+        px = apex[0]-0.25 + 0.30*math.cos(a)
+        py = YC + 0.95*math.sin(a)
+        d  = math.cos(a)                  # crude depth
+        f  = (d+1)/2
+        ax.add_patch(Circle((px,py), 0.42*(0.8+0.2*f), fc=shade(GCPB,f),
+                            ec="#00000055", lw=0.4, zorder=40+d*5))
+    # orange GCP staves + red gamma-tubulin caps, one per protofilament
+    order = sorted(range(N), key=lambda i: math.sin(th[i]))   # back first
+    for i in order:
+        vy = R*math.cos(th[i]); depth = math.sin(th[i]); f=(depth+1)/2
+        capx, capy = X0-0.45 + i*PITCH, YC+vy
+        ax.plot([apex[0]+0.2, capx], [YC + 0.45*vy, capy],
+                color=shade(GCP,f), lw=7*(0.7+0.3*f), solid_capstyle="round",
+                zorder=50+depth*40)
+        bead(ax, capx, capy, depth, GTUB, zbias=2)
 
-    # labels
-    ax.text(8, 8.45, "The γ-tubulin ring complex nucleates a microtubule",
-            ha="center", va="center", color=C_TXT, fontsize=20, fontweight="bold",
-            family="DejaVu Sans")
-    if aturc > 0.4:
-        # brace over gamma-TuRC
-        bx0, bx1, by = RES_X0-0.1, CAP_X+0.5, 6.95
-        ax.plot([bx0,bx0,bx1,bx1],[by-0.15,by,by,by-0.15], color=C_TXT, lw=1.4, alpha=aturc)
-        ax.text((bx0+bx1)/2, by+0.32, "γ-TuRC", ha="center", color=C_TXT, fontsize=14, alpha=aturc)
-        ax.text(0.9, row_y(3), "(−) end", ha="center", va="center", color=C_TXT, fontsize=13, alpha=aturc)
-    if grow > 0.25:
-        xend = GREEN0 + row_sx(3) + (ncols-0.3)*DX
-        ax.text(min(15.2, xend+0.7), row_y(3), "(+) end", ha="left", va="center",
-                color=C_TXT, fontsize=13, alpha=ease((grow-0.25)/0.4))
+    # ---- microtubule cylinder ----
+    draw_list = []
+    for i in range(N):
+        vy = R*math.cos(th[i]); depth = math.sin(th[i])
+        for j in range(nr):
+            x = X0 + i*PITCH + j*DX
+            col = A_COL if (j % 2 == 0) else B_COL
+            draw_list.append((depth, x, YC+vy, col))
+    for depth,x,y,col in sorted(draw_list, key=lambda t:t[0]):   # back->front
+        bead(ax, x, y, depth, col)
 
+    # ---- labels ----
+    ax.text(8, 8.5, "The γ-tubulin ring complex nucleates a microtubule",
+            ha="center", color=TXT, fontsize=20, fontweight="bold", family="DejaVu Sans")
+    ax.text(apex[0]-0.6, 7.0, "γ-TuRC", ha="center", color=TXT, fontsize=14)
+    ax.annotate("(−) end", xy=(X0-0.6, YC-2.4), xytext=(X0-2.2, YC-3.1),
+                color=TXT, fontsize=13)
+    if grow > 0.3:
+        xr = X0 + (N-1)*PITCH + (nr-1)*DX + RAD
+        ax.text(min(14.9, xr+0.5), YC, "(+) end", va="center", color=TXT, fontsize=13,
+                alpha=ease((grow-0.3)/0.4))
     # legend
-    sphere(ax, 0.7, 0.85, 0.20, C_BETA, 50); ax.text(1.05, 0.85, "β-tubulin", va="center", color=C_TXT, fontsize=11)
-    sphere(ax, 0.7, 0.40, 0.20, C_ALPHA, 50); ax.text(1.05, 0.40, "α-tubulin", va="center", color=C_TXT, fontsize=11)
-    sphere(ax, 4.2, 0.62, 0.20, C_GTUB, 50); ax.text(4.55, 0.62, "γ-tubulin", va="center", color=C_TXT, fontsize=11)
+    for k,(c,lab) in enumerate([(B_COL,"β-tubulin"),(A_COL,"α-tubulin"),(GTUB,"γ-tubulin"),(GCP,"GCP"),(GCPB,"GCP base")]):
+        ax.add_patch(Circle((0.8+k*2.7, 0.6), 0.18, fc=c, ec="#00000055"))
+        ax.text(1.05+k*2.7, 0.6, lab, va="center", color=TXT, fontsize=10)
     return fig
 
-def save(t, idx):
-    fig = draw(t)
-    fig.savefig(os.path.join(OUT, f"f{idx:04d}.png"), facecolor=BG)
-    plt.close(fig)
+def save(grow, idx):
+    fig=draw(grow); fig.savefig(os.path.join(OUT,f"f{idx:04d}.png"), facecolor=BG); plt.close(fig)
 
-if __name__ == "__main__":
-    mode = sys.argv[1] if len(sys.argv) > 1 else "sample"
-    if mode == "sample":
-        for idx, t in enumerate([0.15, 0.45, 0.75, 1.0]):
-            save(t, idx)
-        print("samples:", sorted(os.listdir(OUT))[:6])
+if __name__=="__main__":
+    mode = sys.argv[1] if len(sys.argv)>1 else "sample"
+    if mode=="sample":
+        for idx,g in enumerate([0.45, 1.0]): save(g, idx)
+        print("samples done")
     else:
-        N = 170
-        for i in range(N): save(i/(N-1), i)
-        for h in range(16): save(1.0, N+h)
-        print("rendered", N+16, "frames")
+        N_F=170
+        for i in range(N_F): save(ease(i/(N_F-1))*0.0 + i/(N_F-1), i)  # linear grow; cone always present
+        for h in range(16): save(1.0, N_F+h)
+        print("rendered", N_F+16)
