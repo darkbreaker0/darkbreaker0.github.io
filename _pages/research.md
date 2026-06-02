@@ -7,54 +7,36 @@ permalink: /research/
 
 ## Research
 
-<div class="research-grid">
+<div class="section-card" markdown="1">
+### The research program I am developing
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/qed.svg" class="research-thumb" alt="Feynman diagram">
-<div class="research-body">
-<h4 class="research-title">Quantum Electrodynamics</h4>
-<p class="research-desc">Development of the path integral formulation of quantum mechanics and its application to quantum electrodynamics (QED). This work introduced Feynman diagrams as a powerful tool for calculating particle interactions, providing an intuitive visual representation of complex quantum processes.</p>
-</div>
+The wiring of the brain depends on continuous, dynamic interactions between neurons and glia. Glia guide axons, tune synapses, and maintain circuits; after injury and in disease they switch between neuroprotective and neurotoxic states. My research asks how these processes are governed at their most fundamental level — by the **cytoskeleton and the mechanical forces it generates**.
+
+Because glial functional states are tied to cytoskeletal reorganization and cell mechanics, reading and rewriting the cytoskeleton offers a route to understanding — and ultimately intervening in — brain development and neurodegeneration. My approach integrates theoretical modeling of cytoskeletal dynamics with live imaging, optogenetic manipulation *in vitro* and *in vivo*, biochemical reconstitution, and large-scale omics, blending reductionist and holistic strategies.
 </div>
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/superfluidity.svg" class="research-thumb" alt="Superfluid helium">
-<div class="research-body">
-<h4 class="research-title">Superfluidity</h4>
-<p class="research-desc">Quantum mechanical explanation of the behavior of liquid helium near absolute zero. Using path integral methods, we developed a microscopic theory of the lambda transition and explained the energy spectrum of excitations in superfluid helium, including the roton minimum.</p>
-</div>
+<div class="section-card" markdown="1">
+### Programme objectives
+
+1. **Identify molecular targets for intervention.** Using cross-species brain-omics, prioritize cytoskeletal and mechanotransduction genes whose co-expression and co-evolution networks intersect with age-related neurodegeneration and the decline of regenerative potential.
+2. **Characterize age-associated glial changes in morphology and mechanics.** Map how glial cytoskeletal organization — and the mechanical properties it sets — change across developmental and pathological stages, and how those changes alter glial function.
+3. **Decipher the mechanotransduction pathways mediating neuron–glia interactions.** Determine how changes in glial shape and mechanics feed back onto neighbouring neurons' cytoskeletons and morphology during development and degeneration.
 </div>
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/partons.svg" class="research-thumb" alt="Parton model">
-<div class="research-body">
-<h4 class="research-title">Parton Model</h4>
-<p class="research-desc">A model describing the internal structure of hadrons in terms of point-like constituents called partons. This framework proved essential for interpreting deep inelastic scattering experiments at SLAC and laid the groundwork for quantum chromodynamics (QCD).</p>
-</div>
+<div class="section-card" markdown="1">
+### Approach & toolkit
+
+- **Optogenetic & chemogenetic control of cytoskeletal proteins** — light-induced dimerization and targeted degradation for spatiotemporal control of the cytoskeleton in defined cell types.
+- **Primary neuron–glia co-cultures** — to observe how an altered glial cytoskeleton reshapes neighbouring neurons.
+- **Sparse conditional perturbation *in vivo*** — AAV / *in utero* electroporation with cortical slice culture, to manipulate cytoskeletal genes in single cells and specific regions while preserving the surrounding tissue.
+- **Protein biochemistry & *in-vitro* reconstitution** — isolating native and engineered proteins to link molecular activity to the mechanics and geometry of cytoskeletal networks.
+- **Advanced imaging** — live-cell, super-resolution, TIRF, and tissue clearing, with electron-microscopy collaborations for ultrastructure.
 </div>
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/quantum-computing.svg" class="research-thumb" alt="Quantum circuit">
-<div class="research-body">
-<h4 class="research-title">Quantum Computing</h4>
-<p class="research-desc">Pioneering proposals for using quantum mechanical systems to perform computation. We demonstrated that classical computers cannot efficiently simulate quantum physics, motivating the development of quantum computers that exploit superposition and entanglement.</p>
-</div>
-</div>
+<div class="section-card" markdown="1">
+### What I have shown so far
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/nanotechnology.svg" class="research-thumb" alt="Atomic manipulation">
-<div class="research-body">
-<h4 class="research-title">Nanotechnology</h4>
-<p class="research-desc">Exploration of the physical possibilities of manipulating matter at the atomic scale. The talk "There's Plenty of Room at the Bottom" envisioned machines that could arrange atoms one by one, anticipating modern nanotechnology and molecular manufacturing.</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/weak-interactions.svg" class="research-thumb" alt="Weak interaction diagram">
-<div class="research-body">
-<h4 class="research-title">Weak Interactions</h4>
-<p class="research-desc">Development of the V-A theory of the weak interaction with Murray Gell-Mann. This theory correctly predicted the structure of weak decays and was later incorporated into the electroweak unification by Weinberg, Salam, and Glashow.</p>
-</div>
-</div>
-
+- **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in revision, 2026.*
+- **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
+- **Collaborative omics of repair and disease.** Linking pre-synaptic-vesicle gene downregulation to axon-regeneration potential, extracellular-matrix upregulation in reactive astrocytes after stroke, and dorsal-root-ganglion subtype responses to nerve injury.
 </div>
