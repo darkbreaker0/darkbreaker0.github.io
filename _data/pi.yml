@@ -1,11 +1,9 @@
-# Optional: detailed education and bio for the About page.
-# Basic info (name, photo, links) now lives in _config.yml.
-# Delete this file if you only need the basics.
-
-# EXAMPLE -- replace or delete
+# Detailed education shown on the CV/About page (and short form in the sidebar).
 - education:
-    - "(1942) Ph.D. Physics, Princeton University"
-    - "(1939) B.S. Physics, Massachusetts Institute of Technology"
+    - "(2009-2014) Ph.D., Natural Sciences — Dr. rer. nat., magna cum laude, University of Heidelberg, Germany"
+    - "(2005-2006) M.Sc., Biochemistry & Molecular Biology, National Yang‑Ming University, Taiwan"
+    - "(2002-2005) B.Sc., Life Sciences, National Yang‑Ming University, Taiwan"
   educationshort:
-    - "(1942) Ph.D. Physics, Princeton"
-    - "(1939) B.S. Physics, MIT"
+    - "(2014) Ph.D., University of Heidelberg"
+    - "(2006) M.Sc., National Yang‑Ming University"
+    - "(2005) B.Sc., National Yang‑Ming University"
