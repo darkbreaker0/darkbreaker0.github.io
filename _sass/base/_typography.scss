@@ -11,24 +11,25 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, sans-serif;
+  font-family: 'Hanken Grotesk', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
   font-size: 1rem;
   line-height: 1.75;
   font-optical-sizing: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+  font-variation-settings: 'SOFT' 0, 'WONK' 0, 'opsz' 40;
+  letter-spacing: -0.015em;
   color: var(--text-primary);
   margin-top: var(--space-10);
   margin-bottom: var(--space-4);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-h1 { font-size: 2.5rem; font-weight: 800; }
+h1 { font-size: 2.7rem; font-weight: 600; font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 144; }
 h2 {
   font-size: 1.875rem;
   &::after {

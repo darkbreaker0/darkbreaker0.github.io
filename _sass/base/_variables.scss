@@ -3,23 +3,24 @@
 // =============================================================
 
 :root {
-  // Accent — Direction C violet (also injected from _config.yml accent_color)
-  --accent: #7c5cd6;
-  --accent-hover: #6a49c4;
-  --accent-light: rgba(124, 92, 214, 0.10);
+  // Accent — "Filament" violet + cyan (also injected from _config.yml accent_color)
+  --accent: #a78bfa;
+  --accent-hover: #bda6fc;
+  --accent-light: rgba(167, 139, 250, 0.12);
+  --cyan: #5fd0e6;
 
-  // Light mode — warm parchment tones
-  --bg-primary: #f8f6f1;
-  --bg-secondary: #f0ece4;
-  --bg-card: #ffffff;
-  --text-primary: #2c2a25;
-  --text-secondary: #5c5850;
-  --text-muted: #8a857c;
-  --border-color: #e2ded6;
-  --shadow-sm: 0 1px 3px rgba(44, 42, 37, 0.06);
-  --shadow-md: 0 4px 12px rgba(44, 42, 37, 0.08);
-  --shadow-lg: 0 8px 24px rgba(44, 42, 37, 0.1);
-  --shadow-navbar: 0 1px 4px rgba(44, 42, 37, 0.1);
+  // Dark "instrument" palette — the site is dark-first
+  --bg-primary: #0a0b0f;
+  --bg-secondary: #0e1016;
+  --bg-card: #11131b;
+  --text-primary: #ece9e1;
+  --text-secondary: #b9bdc8;
+  --text-muted: #8c92a0;
+  --border-color: rgba(255, 255, 255, 0.09);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.55);
+  --shadow-navbar: 0 1px 0 rgba(255, 255, 255, 0.05);
 
   // Layout
   --container-max: 1100px;

@@ -1,13 +1,73 @@
-<section class="tcl-hero">
-  <div class="tcl-hero__filament" aria-hidden="true"></div>
-  <div class="tcl-hero__inner">
-    <p class="tcl-hero__role">Postdoctoral Researcher &middot; DZNE (Bradke Lab)</p>
-    <h1 class="tcl-hero__title">How does the brain wire itself?</h1>
-    <p class="tcl-hero__tag">I study the cytoskeletal and mechanical logic behind how neurons and glia build the nervous system &mdash; in development, aging, and degeneration.</p>
-    <p class="tcl-hero__desc">Cytoskeletal neurobiology &middot; Mechanobiology of brain development</p>
-    <div class="tcl-hero__btns">
+<section class="fil-hero">
+  <canvas id="fil-field" aria-hidden="true"></canvas>
+  <div class="fil-hero__veil" aria-hidden="true"></div>
+  <div class="fil-tick fil-tick--tl">52.13°N · 7.10°E<br>DZNE · BONN</div>
+  <div class="fil-tick fil-tick--br">FIG.01 — CORTICAL<br>SELF&#8209;ORGANIZATION</div>
+  <div class="fil-hero__inner">
+    <p class="fil-eyebrow">Principles of Neural Self&#8209;Organization</p>
+    <h1 class="fil-title">How does the brain <em>wire itself?</em></h1>
+    <p class="fil-lead">I study the cytoskeletal and mechanical logic behind how neurons and glia build the nervous system &mdash; in development, aging, and degeneration.</p>
+    <p class="fil-position">Postdoctoral researcher at the DZNE, developing an independent research program on the cytoskeleton as the engine of brain wiring.</p>
+    <div class="fil-cta">
       <a class="tcl-btn tcl-btn--solid" href="{{ site.url }}{{ site.baseurl }}/research">Research program</a>
       <a class="tcl-btn tcl-btn--ghost" href="{{ site.url }}{{ site.baseurl }}/futurelab">Work with me</a>
     </div>
   </div>
+  <div class="fil-scroll">scroll<span class="fil-scroll__line"></span></div>
 </section>
+
+<script>
+(function () {
+  var cv = document.getElementById('fil-field');
+  if (!cv) return;
+  var ctx = cv.getContext('2d'), W, H, nodes, raf;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  function host() { return cv.parentElement; }
+  function size() {
+    var r = host().getBoundingClientRect();
+    W = cv.width = r.width * dpr; H = cv.height = r.height * dpr;
+    cv.style.width = r.width + 'px'; cv.style.height = r.height + 'px';
+  }
+  function init() {
+    size();
+    var n = Math.min(82, Math.floor(W / dpr / 16));
+    nodes = Array.from({ length: n }, function () {
+      return { x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.16 * dpr, vy: (Math.random() - 0.5) * 0.16 * dpr,
+        r: (Math.random() * 1.5 + 0.5) * dpr };
+    });
+  }
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    var D = 132 * dpr;
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i];
+      for (var j = i + 1; j < nodes.length; j++) {
+        var b = nodes[j], dx = a.x - b.x, dy = a.y - b.y, d = Math.sqrt(dx * dx + dy * dy);
+        if (d < D) {
+          var t = 1 - d / D, cyan = (i % 5 === 0);
+          ctx.strokeStyle = cyan ? 'rgba(95,208,230,' + (t * 0.16) + ')' : 'rgba(167,139,250,' + (t * 0.16) + ')';
+          ctx.lineWidth = dpr * (i % 7 ? 0.55 : 1.0);
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      }
+    }
+    for (var k = 0; k < nodes.length; k++) {
+      var p = nodes[k];
+      ctx.fillStyle = 'rgba(200,196,230,0.5)';
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill();
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > W) p.vx *= -1;
+      if (p.y < 0 || p.y > H) p.vy *= -1;
+    }
+    raf = requestAnimationFrame(frame);
+  }
+  init();
+  if (reduced) { frame(); cancelAnimationFrame(raf); } else { frame(); }
+  var to;
+  window.addEventListener('resize', function () {
+    clearTimeout(to); to = setTimeout(function () { cancelAnimationFrame(raf); init(); if (!reduced) frame(); else { frame(); cancelAnimationFrame(raf); } }, 200);
+  });
+})();
+</script>

@@ -9,7 +9,7 @@
   z-index: 1030;
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
-  background-color: rgba(248, 246, 241, 0.8) !important;
+  background-color: rgba(10, 11, 15, 0.82) !important;
 
   &.scrolled {
     box-shadow: var(--shadow-navbar);
@@ -21,11 +21,12 @@
 }
 
 .navbar-brand {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-weight: 700;
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--text-primary) !important;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 
   img {
     border-radius: 0;
