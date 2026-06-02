@@ -38,6 +38,8 @@ analytics:
 nav_pages:
   - name: research
   - name: publications
+  - name: code
+    label: "Code"
   - name: cv
     label: "CV"
   - name: futurelab
