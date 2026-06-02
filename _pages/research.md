@@ -38,10 +38,10 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 
 <div class="banner-frame" markdown="0">
 <video autoplay loop muted playsinline preload="metadata">
-  <source src="{{ site.url }}{{ site.baseurl }}/images/arp23-myosin.mp4" type="video/mp4">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/arp3-model.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
-<div class="banner-caption">Arp2/3&ndash;actomyosin dynamics underlying the actin wave that establishes neuronal polarity.</div>
+<div class="banner-caption">A soma-based oscillator selects the axon: Arp2/3-driven actin patches, opposed by actomyosin-mediated global inhibition, drive cycles of neurite retraction until one neurite escapes &mdash; yielding permanent polarization (schematic model).</div>
 </div>
 
 - **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in revision, 2026.*
