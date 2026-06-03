@@ -73,3 +73,15 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 
 - **Collaborative omics of repair and disease.** Linking pre-synaptic-vesicle gene downregulation to axon-regeneration potential, extracellular-matrix upregulation in reactive astrocytes after stroke, and dorsal-root-ganglion subtype responses to nerve injury.
 </div>
+
+<div class="section-card" markdown="1">
+### Watch a talk
+
+<div class="banner-frame" markdown="0">
+<div class="yt-embed" data-ytid="Kd7ejCS3kHg" role="button" tabindex="0" aria-label="Play the recorded lecture">
+<img class="yt-embed__poster" src="{{ site.url }}{{ site.baseurl }}/images/talk-nycu-2022.jpg" alt="Invited lecture at the NYCU College of Life Sciences, with Frank Bradke" loading="lazy">
+<span class="yt-embed__play" aria-hidden="true"></span>
+</div>
+<div class="banner-caption">Invited lecture at the NYCU College of Life Sciences (2022), co-presented with Frank Bradke — on neuronal polarization, the cytoskeleton, and axon growth &amp; regeneration. (Loads from YouTube only when you press play.)</div>
+</div>
+</div>

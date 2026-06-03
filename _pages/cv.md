@@ -61,6 +61,7 @@ permalink: /cv/
 - FENS Symposium, Paris (2022)
 - CSHL meeting *Molecular Mechanisms of Neuronal Connectivity*, New York (2022)
 - European Cytoskeleton Forum, Hannover (2022)
+- Invited lecture (with F. Bradke), NYCU College of Life Sciences, Taiwan (2022) — [watch ▶](https://www.youtube.com/watch?v=Kd7ejCS3kHg)
 </div>
 
 {% if site.data.people %}
