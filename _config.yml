@@ -45,6 +45,8 @@ nav_pages:
     label: "CV"
   - name: futurelab
     label: "Future Lab"
+  - name: working-with-me
+    label: "Working with me"
   - name: contact
 
 # ============================================================
