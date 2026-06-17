@@ -20,10 +20,10 @@
     {% endif %}
 
     {% if entry.doi %}
-      {% if entry.type == 'unpublished' %}
-      <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>
+      {% if entry.doi contains '/' %}
+      <a href="https://doi.org/{{ entry.doi }}" target="_blank" class="btn-pill btn-doi">DOI</a>
       {% else %}
-      <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" class="btn-pill btn-doi">DOI</a>
+      <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>
       {% endif %}
     {% endif %}
 

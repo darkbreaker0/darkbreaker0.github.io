@@ -318,3 +318,18 @@
 .yt-embed:hover .yt-embed__play,
 .yt-embed:focus-visible .yt-embed__play { background: #a78bfa; transform: scale(1.06); }
 .yt-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+// Cover-art gallery
+.cover-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; }
+.cover-gallery figure { margin: 0; }
+.cover-gallery img {
+  width: 100%; height: auto; display: block; border-radius: 8px;
+  border: 1px solid var(--border-color); box-shadow: var(--shadow-md);
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.cover-gallery figure:hover img { transform: translateY(-4px) scale(1.02); }
+.cover-gallery figcaption {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.66rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--text-muted); margin-top: 0.5rem; text-align: center;
+}
+@media (max-width: 640px) { .cover-gallery { grid-template-columns: 1fr; } }

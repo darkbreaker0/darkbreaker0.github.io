@@ -60,7 +60,7 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 <div class="banner-caption">Inside the neurite (a tensegrity balance of actin and microtubules): with low Arp2/3 activity, actomyosin arcs contract and the neurite retracts; with high Arp2/3 activity, the arcs disassemble and microtubules stabilize and extend the shaft.</div>
 </div>
 
-- **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in revision, 2026.*
+- **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript in press, 2026.*
 - **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
 
 <div class="banner-frame" markdown="0">
@@ -83,5 +83,17 @@ Because glial functional states are tied to cytoskeletal reorganization and cell
 <span class="yt-embed__play" aria-hidden="true"></span>
 </div>
 <div class="banner-caption">Invited lecture at the NYCU College of Life Sciences (2022), co-presented with Frank Bradke — on neuronal polarization, the cytoskeleton, and axon growth &amp; regeneration. (Loads from YouTube only when you press play.)</div>
+</div>
+</div>
+
+<div class="section-card" markdown="1">
+### Cover art
+
+Three artistic directions created for the study — the polarizing neuron rendered against the actin-wave oscillator that selects its axon.
+
+<div class="cover-gallery" markdown="0">
+<figure><img src="{{ site.url }}{{ site.baseurl }}/images/cover-mono.jpg" alt="Cover artwork: a monochrome neuron over interference waves" loading="lazy"><figcaption>Interference waves</figcaption></figure>
+<figure><img src="{{ site.url }}{{ site.baseurl }}/images/cover-inkwash.jpg" alt="Cover artwork: an ink-wash rendering of a polarizing neuron" loading="lazy"><figcaption>Ink wash</figcaption></figure>
+<figure><img src="{{ site.url }}{{ site.baseurl }}/images/cover-ocean.jpg" alt="Cover artwork: neurites rendered as cresting ocean waves" loading="lazy"><figcaption>Actin wave</figcaption></figure>
 </div>
 </div>
