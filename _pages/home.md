@@ -13,7 +13,7 @@ permalink: /
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">In&#8209;vitro reconstitution</a>
 </div>
 
-I am a cell biologist and biochemist studying how the **cytoskeleton** and **cell mechanics** drive the self-organization of the nervous system. In the Bradke lab at the German Center for Neurodegenerative Diseases (DZNE), I found that neurons break symmetry to form their single axon through a soma-based actin oscillator and an Arp2/3&ndash;actomyosin local-excitation/global-inhibition system. Building on a foundation in microtubule-nucleation biochemistry (the γ-tubulin small complex and MOZART1), I am developing an independent research program on how cytoskeletal mechanics shape neurons and glia in the developing, aging, and degenerating brain.
+I am a cell biologist and biochemist who studies the cytoskeleton across two scales. In the **Schiebel lab** (ZMBH, Heidelberg), my PhD and postdoctoral work dissected the **biochemistry of microtubule nucleation** — how the γ-tubulin small complex and MOZART1 assemble into the template that seeds new microtubules. In the **Bradke lab** (DZNE, Bonn), I turned to the **actin cytoskeleton of neurons**, discovering a soma-based actin-network oscillation and an Arp2/3&ndash;actomyosin local-excitation/global-inhibition system that selects a single axon to establish neuronal polarity. Building on both, I am developing an independent program on how cytoskeletal dynamics and mechanics drive the **self-organization of the nervous system** — in development, aging, and degeneration.
 
 <div class="callout callout-success" markdown="0">
 <div class="callout-title"><i class="fa-solid fa-dna callout-icon"></i> Accepted at Nature (2026)</div>
