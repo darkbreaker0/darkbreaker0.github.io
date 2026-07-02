@@ -20,10 +20,10 @@ I am a cell biologist and biochemist who studies the cytoskeleton across two sca
 <p><em>An intrinsic cytoskeletal oscillator establishes neuronal polarity.</em> We show that the soma &mdash; not the growth cone alone &mdash; acts as the central organizer of neuronal polarization, through periodic Arp2/3-driven actin waves that bias a single neurite toward axon fate. <a href="{{ site.url }}{{ site.baseurl }}/publications">See publications &rarr;</a></p>
 </div>
 
-### Research themes
+### The program, in three tiers
 
-- **Neuronal polarization & the cytoskeleton** — how a soma-based actin oscillator and Arp2/3&ndash;actomyosin antagonism select the axon.
-- **Neuron–glia mechanobiology** — how glial cytoskeletons and mechanotransduction shape brain circuitry across development, aging, and disease.
-- **Cytoskeletal nucleation & reconstitution** — the γ-tubulin small complex, MOZART1, and the biochemistry behind microtubule organization.
+- **Engine — building a microtubule array without a centrosome.** What gates non-centrosomal nucleation (γ-TuRC / augmin) to the right place and moment, carrying my nucleation biochemistry into the living neuron.
+- **Flagship — mechanics set the cytoskeletal regime.** Treating a neuron's dominant mechanical neighbour, glia, as a tunable input to its excitable actin oscillator — with a falsifiable threshold the aging glial cytoskeleton may cross.
+- **Translational — why neural form fails with age.** How drift in that neuron–glia mechanical dialogue erodes plasticity and repair — and where the lever for intervention lies.
 
 [Read the full research program →]({{ site.url }}{{ site.baseurl }}/research)
