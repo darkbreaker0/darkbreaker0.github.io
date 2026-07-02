@@ -1,5 +1,10 @@
 # Students and mentees, shown on the CV/About page.
 # Each entry needs: name, location, degree, year
+- name: Josephine Hahn
+  location: DZNE
+  degree: Rotation project
+  year: 2025
+
 - name: Annalena Meyer
   location: Univ. Heidelberg
   degree: M.Sc. research project
