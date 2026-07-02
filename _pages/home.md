@@ -22,7 +22,7 @@ I am a cell biologist and biochemist who studies the cytoskeleton across two sca
 
 ### The program, in three tiers
 
-- **Engine — building a microtubule array without a centrosome.** What gates non-centrosomal nucleation (γ-TuRC / augmin) to the right place and moment, carrying my nucleation biochemistry into the living neuron.
+- **Engine — building a microtubule array without a centrosome.** What gates non-centrosomal nucleation (γ-TuRC / augmin) to the right place and moment — connecting the γ-tubulin (γ-TuSC / MOZART1) nucleation biochemistry of my training to the living neuron.
 - **Flagship — mechanics set the cytoskeletal regime.** Treating a neuron's dominant mechanical neighbour, glia, as a tunable input to its excitable actin oscillator — with a falsifiable threshold the aging glial cytoskeleton may cross.
 - **Translational — why neural form fails with age.** How drift in that neuron–glia mechanical dialogue erodes plasticity and repair — and where the lever for intervention lies.
 
