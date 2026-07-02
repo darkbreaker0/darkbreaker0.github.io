@@ -8,19 +8,29 @@ permalink: /research/
 ## Research
 
 <div class="section-card" markdown="1">
-### The research program I am developing
+### The research program I am building
 
-The wiring of the brain depends on continuous, dynamic interactions between neurons and glia. Glia guide axons, tune synapses, and maintain circuits; after injury and in disease they switch between neuroprotective and neurotoxic states. My research asks how these processes are governed at their most fundamental level — by the **cytoskeleton and the mechanical forces it generates**.
+> **The cytoskeleton is the control system that builds the shape of neural cells. My lab will make that statement quantitative and predictive — and use it to explain why neural form fails to hold in the aging brain.**
 
-Because glial functional states are tied to cytoskeletal reorganization and cell mechanics, reading and rewriting the cytoskeleton offers a route to understanding — and ultimately intervening in — brain development and neurodegeneration. My approach integrates theoretical modeling of cytoskeletal dynamics with live imaging, optogenetic manipulation *in vitro* and *in vivo*, biochemical reconstitution, and large-scale omics, blending reductionist and holistic strategies.
+How does a neuron acquire and maintain its shape, and why does that capacity decline with age? My work established that neuronal form is not dictated part-by-part but *self-organized*: an excitable actin–actomyosin system, acting across the whole cell, breaks symmetry to specify the axon (*Nature*, 2026). That reframes neuronal morphogenesis as a **dynamical-systems problem** — a cell's shape is the output of a control system with definable parameters, not a fixed blueprint. Over the next six years I will identify those control parameters, show how a cell's mechanical environment sets them, and test whether their drift is a root cause of declining plasticity and repair in the aging nervous system.
+
+The program sits at the largely unclaimed intersection of **excitable-cytoskeleton dynamics** and **brain mechanics & aging** — the natural synthesis of my three research phases: the nucleation biochemistry (Schiebel), the excitable-actin discovery (Bradke), and a quantitative, physics-grounded account of what they add up to.
 </div>
 
 <div class="section-card" markdown="1">
-### Programme objectives
+### Three questions, one program
 
-1. **Find the targets.** Cross-species brain-omics to prioritize cytoskeletal and mechanotransduction genes tied to neurodegeneration and the age-related decline of regenerative potential.
-2. **Map glial mechanics with age.** How glial cytoskeletal organization — and the forces it generates — shift across development and disease, and how that reshapes glial function.
-3. **Decode neuron–glia mechanotransduction.** How changing glial shape and mechanics feed back onto neighbouring neurons to remodel their cytoskeleton and form.
+1. **Building a microtubule array without a centrosome.** Neurons abandon the centrosome and must nucleate and organize microtubules locally (γ-TuRC / augmin, minus-end stabilization). What *gates* nucleation to the right place and moment? — carrying the branching-nucleation biochemistry I trained in into the living neuron. *(The tractable engine — mechanism with a clear experimental handle.)*
+2. **How mechanics set the regime of the neuronal cytoskeleton.** The excitable actin system has control parameters, and mechanical inputs — substrate stiffness, membrane tension, external force — are among the most potent; a neuron's dominant mechanical neighbour is glia. I will build a quantitative theory treating glial mechanical state as a tunable input to the neuronal oscillator, and test a falsifiable prediction: *there is a threshold in glia-derived mechanical load above which a neuron leaves the regime that permits normal form — and the aging glial cytoskeleton crosses it.* *(The flagship.)*
+3. **Why neural form fails with age — and where the lever is.** If neuron–glia mechanical dialogue sets the cytoskeletal regime, its drift with age becomes a mechanistic account of eroding plasticity and repair — precise enough to name an intervention point. *(The translational horizon — neurodegeneration and cortical-malformation models.)*
+</div>
+
+<div class="section-card" markdown="1">
+### What will be true by 2032
+
+- A **predictive, parameterized model** of neuronal cytoskeletal self-organization, validated against live imaging — one that says *which* mechanical or molecular perturbation moves a neuron out of the form-permitting regime.
+- The **first quantitative demonstration** that a glial mechanical control parameter gates neuronal cytoskeletal organization, and that it drifts with age.
+- A mechanistic **entry point for intervention** in age-related loss of structural plasticity — framed as a control parameter to tune, not a molecule to inventory.
 </div>
 
 <div class="section-card" markdown="1">
