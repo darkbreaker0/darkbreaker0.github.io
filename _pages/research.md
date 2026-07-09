@@ -70,7 +70,7 @@ The program sits at the largely unclaimed intersection of **excitable-cytoskelet
 <div class="banner-caption">Inside the neurite (a tensegrity balance of actin and microtubules): with low Arp2/3 activity, actomyosin arcs contract and the neurite retracts; with high Arp2/3 activity, the arcs disassemble and microtubules stabilize and extend the shaft.</div>
 </div>
 
-- **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author manuscript, accepted at Nature (2026).*
+- **A cytoskeletal oscillator for neuronal polarity.** The soma — not the growth cone alone — organizes neuronal polarization: periodic Arp2/3-dependent actin branching remodels a global actomyosin network into an actin wave that biases a single neurite toward axon fate (an Arp2/3–actomyosin local-excitation/global-inhibition system). *First-author paper, published in Nature (2026).*
 - **The biochemistry of microtubule nucleation.** I established MOZART1 as an integral part of the γ-tubulin small complex and a driver of its assembly into a nucleation-competent ring, and dissected the mitotic phospho-regulation of γ-TuSC and its receptors.
 
 <div class="banner-frame" markdown="0">

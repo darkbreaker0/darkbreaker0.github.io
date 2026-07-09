@@ -16,8 +16,8 @@ permalink: /
 I am a cell biologist and biochemist who studies the cytoskeleton across two scales. In the **Schiebel lab** (ZMBH, Heidelberg), my PhD and postdoctoral work dissected the **biochemistry of microtubule nucleation** — how the γ-tubulin small complex and MOZART1 assemble into the template that seeds new microtubules. In the **Bradke lab** (DZNE, Bonn), I turned to the **actin cytoskeleton of neurons**, discovering a soma-based actin-network oscillation and an Arp2/3&ndash;actomyosin local-excitation/global-inhibition system that selects a single axon to establish neuronal polarity. Building on both, I am developing an independent program on how cytoskeletal dynamics and mechanics drive the **self-organization of the nervous system** — in development, aging, and degeneration.
 
 <div class="callout callout-success" markdown="0">
-<div class="callout-title"><i class="fa-solid fa-dna callout-icon"></i> Accepted at Nature (2026)</div>
-<p><em>An intrinsic cytoskeletal oscillator establishes neuronal polarity.</em> We show that the soma &mdash; not the growth cone alone &mdash; acts as the central organizer of neuronal polarization, through periodic Arp2/3-driven actin waves that bias a single neurite toward axon fate. <a href="{{ site.url }}{{ site.baseurl }}/publications">See publications &rarr;</a></p>
+<div class="callout-title"><i class="fa-solid fa-dna callout-icon"></i> Published in Nature (2026)</div>
+<p><em>An intrinsic cytoskeletal oscillator establishes neuronal polarity.</em> We show that the soma &mdash; not the growth cone alone &mdash; acts as the central organizer of neuronal polarization, through periodic Arp2/3-driven actin waves that bias a single neurite toward axon fate. <a href="https://www.nature.com/articles/s41586-026-10755-6">Read in Nature &rarr;</a></p>
 </div>
 
 ### The program, in three tiers
