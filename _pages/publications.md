@@ -9,7 +9,7 @@ permalink: /publications/
 
 <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
 
-<p style="color: var(--text-secondary);">First-author papers are shown in <b>bold</b>. ORCID: <a href="https://orcid.org/0000-0002-6852-2900">0000-0002-6852-2900</a> &middot; <a href="https://scholar.google.com/citations?user=xARPM5QAAAAJ">Google Scholar</a></p>
+<p style="color: var(--text-secondary);">My name (<b>Lin, T.-C.</b>) is highlighted in each citation. ORCID: <a href="https://orcid.org/0000-0002-6852-2900">0000-0002-6852-2900</a> &middot; <a href="https://scholar.google.com/citations?user=xARPM5QAAAAJ">Google Scholar</a></p>
 
 <div class="section-card" id="pubList">
 <h3>Journal articles</h3>
