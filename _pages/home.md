@@ -17,7 +17,7 @@ I am a cell biologist and biochemist who studies the cytoskeleton across two sca
 
 <div class="callout callout-success" markdown="0">
 <div class="callout-title"><i class="fa-solid fa-dna callout-icon"></i> Published in Nature (2026)</div>
-<p><em>An intrinsic cytoskeletal oscillator establishes neuronal polarity.</em> We show that the soma &mdash; not the growth cone alone &mdash; acts as the central organizer of neuronal polarization, through periodic Arp2/3-driven actin waves that bias a single neurite toward axon fate. <a href="https://www.nature.com/articles/s41586-026-10755-6">Read in Nature &rarr;</a></p>
+<p><em>An intrinsic cytoskeletal oscillator establishes neuronal polarity.</em> We show that the soma &mdash; not the growth cone alone &mdash; acts as the central organizer of neuronal polarization, through periodic Arp2/3-driven actin waves that bias a single neurite toward axon fate. <a href="https://rdcu.be/fsRqy">Read the paper (free) &rarr;</a></p>
 </div>
 
 ### The program, in three tiers

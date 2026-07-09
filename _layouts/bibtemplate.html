@@ -27,6 +27,10 @@
       {% endif %}
     {% endif %}
 
+    {% if entry.sharedit %}
+    <a href="{{ entry.sharedit }}" target="_blank" class="btn-pill btn-pdf">Full text (free)</a>
+    {% endif %}
+
     {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
     <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}">BIB</button>
     {% endif %}
