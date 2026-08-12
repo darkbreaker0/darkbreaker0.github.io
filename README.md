@@ -1,23 +1,11 @@
-# darkbreaker0.github.io
+# darkbreaker0.github.io — moved
 
-Personal academic website of **Dr. Tien-Chen Lin** — cytoskeletal neurobiology and the mechanobiology of brain development.
+This website has moved to **https://tien-chen-lin.github.io**
+(repository: https://github.com/tien-chen-lin/tien-chen-lin.github.io).
 
-Live site: https://darkbreaker0.github.io
+This repository now serves only a redirect (`site/`), so existing links keep working —
+including deep links, which are forwarded to the matching page on the new domain.
 
-## Built with
-- [Jekyll](https://jekyllrb.com/) + Jekyll Scholar, on a customized fork of the
-  [academic-website-template](https://github.com/sbryngelson/academic-website-template).
-- Deployed automatically by GitHub Actions on every push to the `source` branch.
-
-## Local development
-```bash
-bundle install
-bundle exec jekyll serve   # then open http://localhost:4000
-```
-
-## Editing content
-- Identity, links, accent colour, navigation: `_config.yml`
-- Profile (education, honours, mentees): `_data/pi.yml`, `_data/awards.yml`, `_data/people.yml`
-- News: `_data/news.yml`
-- Publications: `assets/ref.bib`
-- Pages: `_pages/*.md`
+Research code remains in this account, unchanged:
+**https://github.com/darkbreaker0** — including the repositories cited in the
+Nature (2026) paper *An intrinsic cytoskeletal oscillator establishes neuronal polarity*.
